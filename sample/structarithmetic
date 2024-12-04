@@ -1,0 +1,86 @@
+//////#include<stdio.h>
+//////struct emp
+//////{
+//////int id;
+//////float sal;
+//////char sec;
+//////};
+//////int main()
+//////{
+//////	struct emp x;
+//////	struct emp y;
+//////	struct emp z;
+////////struct emp x;
+//////x.id=10;
+//////x.sal=23444.655f;
+//////x.sec='a';
+//////
+////////struct emp y;
+//////y.id=11;
+//////y.sal=44334.543f;
+//////y.sec='b';
+//////
+////////struct emp z;
+//////z.id=x.id+y.id;
+//////z.sal=x.sal+y.sal;
+//////z.sec=x.sec+y.sec;
+//////printf("%d%\n%c\n%f\n",z.id,z.sal,z.sec);
+//////}
+////#include <stdio.h>
+////
+////struct emp {
+////	int id;
+////	float sal;
+////	char sec;
+////};
+////
+////int main() 
+////{
+////	struct emp x;
+////	struct emp y;
+////	struct emp z;
+////	x.id = 10;
+////	x.sal = 23444.655f;
+////	x.sec = 'a';
+////
+////	y.id = 11;
+////	y.sal = 44334.543f;
+////	y.sec = 'b';
+////	
+////	z.id = x.id + y.id;         // Adding the ids of x and y
+////	z.sal = x.sal + y.sal;       // Adding the salaries of x and y
+////	z.sec = x.sec;               // Assigning the character from x (or you can choose 'a', 'b', etc.)
+////
+////	// Correct format specifiers in printf
+////	printf("%d\n", z.id);        // For integer id
+////	printf("%f\n", z.sal);       // For float salary
+////	printf("%c\n", z.sec);       // For char sect     ion
+////
+////	//return 0;
+//}
+#include<stdio.h>
+struct student
+{
+int id;
+char no;
+float marks;
+};
+int main()
+{
+struct student s1;
+ struct student s2;
+ struct student s3;
+
+s1.id=23;
+s1.no='a';
+s1.marks=342.542f;
+s2.id=24;
+s2.no='b';
+s2.marks=323.54f;
+s3.id=s1.id*s2.id;
+s3.no=s1.no*s2.no;
+s3.marks=s1.marks*s2.marks;
+
+printf("%d\n %d\n %f\n",s3.id,s3.no,s3.marks);
+
+}
